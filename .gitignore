@@ -4,4 +4,4 @@
 *.js.meta
 node_modules/
 build/
-onboarding_video.mp4
+static_assets/onboarding_video.mp4
