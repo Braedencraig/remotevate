@@ -5,6 +5,7 @@ import {
   Pano,
   Text,
   View,
+  Image
 } from 'react-vr';
 import VideoFrame from './components/videoFrame'
 
@@ -12,8 +13,18 @@ export default class remotevate extends React.Component {
   render() {
     return (
       <View>
-        <Pano source={asset('conference_room.jpg')}/>
+        <Pano source={asset('conference_room.jpg')} />
         <VideoFrame />
+        <Image source={asset('macbook.png')}
+          style={{
+            width: 2,
+            height: 2,
+            layoutOrigin: [1, 1],
+            textAlign: 'center',
+            textAlignVertical: 'center',
+            transform: [{ translate: [5, 1.5, -10] }]
+          }
+          } />
       </View>
     );
   }
