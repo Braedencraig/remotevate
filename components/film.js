@@ -2,15 +2,46 @@ import React, { Component } from 'react'
 import {
     Video,
     View,
-    asset
+    asset,
+    MediaPlayerState,
+    VrButton
 } from 'react-vr'
 
-function Film() {
-    return (
-        <View style={{ margin: 0.2, height: 2 }}>
-            <Video style={{ height: 2.7 }} source={asset('onboarding_video.mp4')} />
-        </View>
-    )
+class Film extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            playerState: new MediaPlayerState({ autoPlay: false }),
+            isPlaying: false
+        }
+        this.togglePlay = this.togglePlay.bind(this)
+    }
+    togglePlay() {
+        if (this.state.isPlaying === false) {
+            this.setState({ isPlaying: true })
+            this.state.playerState.play()
+        } else {
+            this.setState({ isPlaying: false })
+            this.state.playerState.pause()
+        }
+    }
+    render() {
+        console.log('video is playing?:', this.state.isPlaying)
+        return (
+            <View style={{ margin: 0.2, height: 2 }}>
+                <VrButton
+                    onClick={() => this.togglePlay()}
+                >
+                    <Video
+                        style={{ height: 2.7 }}
+                        source={asset('onboarding_video.mp4')}
+                        playerState={this.state.playerState}
+                    />
+                </VrButton>
+            </View>
+        )
+
+    }
 }
 
 module.exports = Film
