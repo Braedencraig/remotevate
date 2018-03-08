@@ -17,7 +17,7 @@ export default class remotevate extends React.Component {
       </View>
     );
   }
-};
+}
 
 AppRegistry.registerComponent('remotevate', () => remotevate);
 
