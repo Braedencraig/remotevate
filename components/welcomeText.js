@@ -1,10 +1,12 @@
 import React from 'react'
 import {
-    Text
+    Text,
+    View
 } from 'react-vr'
 
 function WelcomeText () {
     return (
+        <View>
         <Text
           style={{
             backgroundColor: '#777879',
@@ -19,6 +21,7 @@ function WelcomeText () {
           }}>
           Welcome to Fullstack Academy!
         </Text>
+        </View>
     )
 }
 
