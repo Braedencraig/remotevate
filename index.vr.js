@@ -14,13 +14,13 @@ import Clock from './components/clock'
 export default class remotevate extends Component {
   render() {
     return (
-      <View>
-        <Pano source={asset('conference_room.jpg')} />
-        <VideoFrame />
-        <MacBook />
-        <WelcomeText />
-        <Apple />
-        <Clock />
+      <View style={{position: 'absolute'}}>
+      <Pano source={asset('conference_room.jpg')} style={{position: 'absolute'}}/>
+      <VideoFrame />
+      <MacBook />
+      <WelcomeText />
+      <Apple />
+      <Clock />
       </View>
     );
   }
