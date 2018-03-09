@@ -19,10 +19,8 @@ export default class remotevate extends React.Component {
           style={{
             width: 2,
             height: 2,
-            layoutOrigin: [1, 1],
-            textAlign: 'center',
-            textAlignVertical: 'center',
-            transform: [{ translate: [5, 1.5, -10] }]
+            layoutOrigin: [0.5, 0.5],
+            transform: [{ translate: [8.5, -0.5, -2] }, {rotateY : -100}]
           }
           } />
       </View>
