@@ -5,16 +5,16 @@ import {
     VrButton
 } from 'react-vr'
 
-export default function MacBook() {
+export default function Apple() {
     return (
         <VrButton>
             <Image
-                source={asset('macbook.png')}
+                source={asset('apple.png')}
                 style={{
-                    width: 2,
-                    height: 2,
+                    width: 1.4,
+                    height: 1.4,
                     layoutOrigin: [0.5, 0.5],
-                    transform: [{ translate: [8.5, -0.5, -2] }, { rotateY: -100 }]
+                    transform: [{ translate: [17, 2, -15] }, { rotateY: -10 }]
                 }
                 }
             />
@@ -22,4 +22,4 @@ export default function MacBook() {
     )
 }
 
-module.exports = MacBook
+module.exports = Apple

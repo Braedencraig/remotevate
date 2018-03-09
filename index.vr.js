@@ -8,6 +8,7 @@ import {
 import VideoFrame from './components/videoFrame'
 import MacBook from './components/macbook'
 import WelcomeText from './components/welcomeText'
+import Apple from './components/apple'
 
 export default class remotevate extends Component {
   render() {
@@ -17,6 +18,7 @@ export default class remotevate extends Component {
         <VideoFrame />
         <MacBook />
         <WelcomeText />
+        <Apple />
       </View>
     );
   }
