@@ -22,58 +22,51 @@ export default class Clock extends Component {
 
         } else if (this.state.displayingText) {
             this.setState({ displayingText: false })
-            console.log('displaying text?: ', this.state.displayingText)
-            //this.state.playerState.pause()
         }
     }
 
     render() {
-        console.log(this.state, "HEYYYY")
         console.log('displaying text?: ', this.state.displayingText)
         return (
             <View>
                 <VrButton onClick={() => this.toggleDisplayText()}>
-                    
-
                     {this.state.displayingText === true ?
                         (
                             <View>
-                            <Text
-                                style={{
-                                    backgroundColor: '#777879',
-                                    fontSize: 0.7,
-                                    fontWeight: '400',
-                                    layoutOrigin: [0.7, 0.7],
-                                    paddingLeft: 0.2,
-                                    paddingRight: 0.2,
-                                    textAlign: 'center',
-                                    textAlignVertical: 'center',
-                                    transform: [{ translate: [19, 13, 8] }, { rotateY: -90 }],
-                                }}>
-                                Class begins at 10 a.m. sharp.
+                                <Text
+                                    style={{
+                                        backgroundColor: '#777879',
+                                        fontSize: 0.7,
+                                        fontWeight: '400',
+                                        layoutOrigin: [0.7, 0.7],
+                                        paddingLeft: 0.2,
+                                        paddingRight: 0.2,
+                                        textAlign: 'center',
+                                        textAlignVertical: 'center',
+                                        transform: [{ translate: [19, 13, 8] }, { rotateY: -90 }],
+                                    }}>
+                                    Class begins at 10 a.m. sharp.
                         </Text>
-                        </View>
+                            </View>
                         )
                         : (<Image
-                        source={asset('clock.png')}
-                        style={{
-                            width: 3,
-                            height: 3,
-                            layoutOrigin: [0.7, 0.7],
-                            transform: [{ translate: [19, 13, 8] }, { rotateY: -90 }]
-                        }
-                        }
-                    /> )
+                            source={asset('clock.png')}
+                            style={{
+                                width: 3,
+                                height: 3,
+                                layoutOrigin: [0.7, 0.7],
+                                transform: [{ translate: [19, 13, 8] }, { rotateY: -90 }]
+                            }
+                            }
+                        />)
                     }
 
                 </VrButton>
             </View>
 
-
         )
     }
 }
-
 
 
 module.exports = Clock
