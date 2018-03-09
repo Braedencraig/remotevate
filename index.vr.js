@@ -9,6 +9,7 @@ import VideoFrame from './components/videoFrame'
 import MacBook from './components/macbook'
 import WelcomeText from './components/welcomeText'
 import Apple from './components/apple'
+import Clock from './components/clock'
 
 export default class remotevate extends Component {
   render() {
@@ -19,11 +20,11 @@ export default class remotevate extends Component {
         <MacBook />
         <WelcomeText />
         <Apple />
+        <Clock />
       </View>
     );
   }
 }
 
 AppRegistry.registerComponent('remotevate', () => remotevate);
-
 
