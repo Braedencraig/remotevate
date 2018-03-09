@@ -8,6 +8,7 @@ import {
   Image
 } from 'react-vr';
 import VideoFrame from './components/videoFrame'
+import MacBook from './components/macbook'
 
 export default class remotevate extends React.Component {
   render() {
@@ -15,14 +16,7 @@ export default class remotevate extends React.Component {
       <View>
         <Pano source={asset('conference_room.jpg')} />
         <VideoFrame />
-        <Image source={asset('macbook.png')}
-          style={{
-            width: 2,
-            height: 2,
-            layoutOrigin: [0.5, 0.5],
-            transform: [{ translate: [8.5, -0.5, -2] }, {rotateY : -100}]
-          }
-          } />
+        <MacBook />
       </View>
     );
   }
