@@ -1,19 +1,24 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
   AppRegistry,
   asset,
   Pano,
-  Text,
-  View,
+  View
 } from 'react-vr';
 import VideoFrame from './components/videoFrame'
+import MacBook from './components/macbook'
+import WelcomeText from './components/welcomeText'
+import Apple from './components/apple'
 
-export default class remotevate extends React.Component {
+export default class remotevate extends Component {
   render() {
     return (
       <View>
-        <Pano source={asset('conference_room.jpg')}/>
+        <Pano source={asset('conference_room.jpg')} />
         <VideoFrame />
+        <MacBook />
+        <WelcomeText />
+        <Apple />
       </View>
     );
   }
@@ -21,18 +26,4 @@ export default class remotevate extends React.Component {
 
 AppRegistry.registerComponent('remotevate', () => remotevate);
 
-// <Text
-//           style={{
-//             backgroundColor: '#777879',
-//             fontSize: 0.8,
-//             fontWeight: '400',
-//             layoutOrigin: [0.5, 0.5],
-//             paddingLeft: 0.2,
-//             paddingRight: 0.2,
-//             textAlign: 'center',
-//             textAlignVertical: 'center',
-//             transform: [{translate: [0, 0, -3]}, 
-//             {rotateY : -15}],
-//           }}>
-//           hello
-//         </Text>
+
