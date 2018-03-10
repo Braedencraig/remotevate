@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import {
     VrButton,
     View,
-    Text
+    Text,
+    Image,
+    asset
 } from 'react-vr'
 
 export default class Water extends Component {
@@ -42,30 +44,23 @@ export default class Water extends Component {
                                         paddingRight: 0.2,
                                         textAlign: 'center',
                                         textAlignVertical: 'center',
-                                        transform: [{ translate: [19, 5, 18] }, { rotateY: -130 }],
+                                        transform: [{ translate: [19, 0, 18] }, { rotateY: -130 }],
                                     }}>
                                     Stay healthy! Your health is your #1 priority.
                         </Text>
                             </View>
                         )
                         : (
-                            <View>
-                                <Text
+                                <Image
+                                    source={asset('transparent_box.png')}
                                     style={{
                                         position: 'absolute',
-                                        backgroundColor: '#777879',
-                                        fontSize: 0.9,
-                                        fontWeight: '400',
+                                        width: 13,
+                                        height: 13,
                                         layoutOrigin: [0.5, 0.5],
-                                        paddingLeft: 0.2,
-                                        paddingRight: 0.2,
-                                        textAlign: 'center',
-                                        textAlignVertical: 'center',
-                                        transform: [{ translate: [21, -1, 18] }, { rotateY: -130 }],
-                                    }}>
-                                    .
-                        </Text>
-                            </View>
+                                        transform: [{ translate: [21, -4, 18] }, { rotateY: -130 }],
+                                    }}
+                                    />
                         )
                     }
 

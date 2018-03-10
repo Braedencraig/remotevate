@@ -17,7 +17,7 @@ function WelcomeText () {
             paddingRight: 0.2,
             textAlign: 'center',
             textAlignVertical: 'center',
-            transform: [{ translate: [0, 1.25, -9] }, { rotateY: -10 }],
+            transform: [{ translate: [0, -1, -9] }, { rotateY: -10 }],
           }}>
           Welcome to Fullstack Academy!
         </Text>
