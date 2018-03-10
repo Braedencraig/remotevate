@@ -26,7 +26,7 @@ export default class Clock extends Component {
     }
 
     render() {
-        console.log('displaying text?: ', this.state.displayingClockText)
+        console.log('displaying Clock text?: ', this.state.displayingClockText)
         return (
             <View>
                 <VrButton onClick={this.toggleDisplayText}>
@@ -35,6 +35,7 @@ export default class Clock extends Component {
                             <View>
                                 <Text
                                     style={{
+                                        //position: 'absolute',
                                         backgroundColor: '#777879',
                                         fontSize: 0.7,
                                         fontWeight: '400',

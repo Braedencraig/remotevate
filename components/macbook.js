@@ -24,6 +24,7 @@ export default class MacBook extends Component {
         }
     }
     render() {
+        console.log('displaying MacBook text?: ', this.state.displayingMacBookText)
         return (
             <View>
             <VrButton onClick={this.toggleDisplayText}>
@@ -31,6 +32,7 @@ export default class MacBook extends Component {
                     <View>
                         <Text
                             style={{
+                                //position: 'absolute',
                                 backgroundColor: '#777879',
                                 fontSize: 0.5,
                                 fontWeight: '400',
