@@ -44,7 +44,7 @@ export default class Outside extends Component {
                                         paddingRight: 0.2,
                                         textAlign: 'center',
                                         textAlignVertical: 'center',
-                                        transform: [{ translate: [-30, 12, -19] }, { rotateY: -290 }],
+                                        transform: [{ translate: [-30, 6, -19] }, { rotateY: -290 }],
                                     }}>
                                     Remember to go outside once in a while!
                         </Text>
@@ -59,7 +59,7 @@ export default class Outside extends Component {
                                         width: 10,
                                         height: 10,
                                         layoutOrigin: [0.5, 0.5],
-                                        transform: [{ translate: [-30, 13, -16] }, { rotateY: -290 }],
+                                        transform: [{ translate: [-30, 6, -16] }, { rotateY: -290 }],
                                     }}
                                 />
                             </View>

@@ -44,23 +44,23 @@ export default class Apple extends Component {
                                         paddingRight: 0.2,
                                         textAlign: 'center',
                                         textAlignVertical: 'center',
-                                        transform: [{ translate: [17, 2, -15] }, { rotateY: -10 }],
+                                        transform: [{ translate: [17, 0, -15] }, { rotateY: -10 }],
                                     }}>
                                     Questions? Submit a help ticket on LearnDot!
                         </Text>
                             </View>
                         )
                         : (
-                            <Image
-                                source={asset('apple.png')}
-                                style={{
-                                    width: 1.4,
-                                    height: 1.4,
-                                    layoutOrigin: [0.5, 0.5],
-                                    transform: [{ translate: [17, 2, -15] }, { rotateY: -10 }]
-                                }
-                                }
-                            />
+                                <Image
+                                    source={asset('apple.png')}
+                                    style={{
+                                        position: 'absolute',
+                                        width: 1.4,
+                                        height: 1.4,
+                                        layoutOrigin: [0.5, 0.5],
+                                        transform: [{ translate: [17, 0, -15] }, { rotateY: -10 }],
+                                    }}
+                                    />
                         )
                     }
 

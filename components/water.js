@@ -44,7 +44,7 @@ export default class Water extends Component {
                                         paddingRight: 0.2,
                                         textAlign: 'center',
                                         textAlignVertical: 'center',
-                                        transform: [{ translate: [19, 5, 18] }, { rotateY: -130 }],
+                                        transform: [{ translate: [19, 0, 18] }, { rotateY: -130 }],
                                     }}>
                                     Stay healthy! Your health is your #1 priority.
                         </Text>
@@ -55,10 +55,10 @@ export default class Water extends Component {
                                     source={asset('transparent_box.png')}
                                     style={{
                                         position: 'absolute',
-                                        width: 10,
-                                        height: 10,
+                                        width: 13,
+                                        height: 13,
                                         layoutOrigin: [0.5, 0.5],
-                                        transform: [{ translate: [21, -1, 18] }, { rotateY: -130 }],
+                                        transform: [{ translate: [21, -4, 18] }, { rotateY: -130 }],
                                     }}
                                     />
                         )
