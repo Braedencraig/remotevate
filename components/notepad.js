@@ -42,7 +42,7 @@ export default class Notepad extends Component {
                                         paddingRight: 0.2,
                                         textAlign: 'center',
                                         textAlignVertical: 'center',
-                                        transform: [{ translate: [-20, 5.5, -1.5] }, { rotateY: -280 }],
+                                        transform: [{ translate: [-20, 0.7, -1.5] }, { rotateY: -280 }],
                                     }}>
                                     We recommend using Quiver or Boostnote (free) for note-taking.
                         </Text>
@@ -61,7 +61,7 @@ export default class Notepad extends Component {
                                         paddingRight: 0.2,
                                         textAlign: 'center',
                                         textAlignVertical: 'center',
-                                        transform: [{ translate: [-20, 0.9, -4.5] }, { rotateX: -90, rotateY: -320 }],
+                                        transform: [{ translate: [-21, -6, -4.9] }, { rotateX: -90, rotateY: -320 }],
                                     }}>
                                      Notes
                         </Text>
