@@ -11,6 +11,7 @@ import WelcomeText from './components/welcomeText'
 import Apple from './components/apple'
 import Clock from './components/clock'
 import Water from './components/water'
+import Notepad from './components/notepad'
 
 export default class remotevate extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class remotevate extends Component {
         <Apple />
         <Clock />
         <Water />
+        <Notepad />
 
       </View>
     );
