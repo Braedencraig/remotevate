@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import {
-    Image,
-    asset,
     VrButton,
+    View,
     Text,
-    View
+    Image,
+    asset
 } from 'react-vr'
 
 export default class Clock extends Component {
@@ -20,7 +20,7 @@ export default class Clock extends Component {
         if (!this.state.displayingClockText) {
             this.setState({ displayingClockText: true })
 
-        } else if (this.state.displayingClockText) {
+        } else {
             this.setState({ displayingClockText: false })
         }
     }
@@ -44,22 +44,24 @@ export default class Clock extends Component {
                                         paddingRight: 0.2,
                                         textAlign: 'center',
                                         textAlignVertical: 'center',
-                                        transform: [{ translate: [19, 13, 8] }, { rotateY: -90 }],
+                                        transform: [{ translate: [19, 11, 8] }, { rotateY: -90 }],
                                     }}>
                                     Class begins at 10 a.m. sharp, Monday to Friday.
                         </Text>
                             </View>
                         )
-                        : (<Image
-                            source={asset('clock.png')}
-                            style={{
-                                width: 3,
-                                height: 3,
-                                layoutOrigin: [0.7, 0.7],
-                                transform: [{ translate: [19, 13, 8] }, { rotateY: -90 }]
-                            }
-                            }
-                        />)
+                        : (
+                                <Image
+                                    source={asset('clock.png')}
+                                    style={{
+                                        position: 'absolute',
+                                        width: 3,
+                                        height: 3,
+                                        layoutOrigin: [0.7, 0.7],
+                                        transform: [{ translate: [19, 11, 8] }, { rotateY: -90 }],
+                                    }}
+                                    />
+                        )
                     }
 
                 </VrButton>

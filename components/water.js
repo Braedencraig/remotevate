@@ -51,7 +51,6 @@ export default class Water extends Component {
                             </View>
                         )
                         : (
-                            <View>
                                 <Image
                                     source={asset('transparent_box.png')}
                                     style={{
@@ -62,7 +61,6 @@ export default class Water extends Component {
                                         transform: [{ translate: [21, -1, 18] }, { rotateY: -130 }],
                                     }}
                                     />
-                            </View>
                         )
                     }
 

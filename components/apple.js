@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import {
-    Image,
-    asset,
     VrButton,
     View,
-    Text
+    Text,
+    Image,
+    asset
 } from 'react-vr'
 
 export default class Apple extends Component {
