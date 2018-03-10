@@ -19,7 +19,7 @@ export default class MacBook extends Component {
         if (!this.state.displayingMacBookText) {
             this.setState({ displayingMacBookText: true })
 
-        } else if (this.state.displayingMacBookText) {
+        } else {
             this.setState({ displayingMacBookText: false })
         }
     }

@@ -3,8 +3,8 @@ import {
     Image,
     asset,
     VrButton,
-    Text,
-    View
+    View,
+    Text
 } from 'react-vr'
 
 export default class Apple extends Component {
@@ -20,7 +20,7 @@ export default class Apple extends Component {
         if (!this.state.displayingAppleText) {
             this.setState({ displayingAppleText: true })
 
-        } else if (this.state.displayingClockText) {
+        } else {
             this.setState({ displayingAppleText: false })
         }
     }
