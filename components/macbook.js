@@ -11,25 +11,28 @@ export default class MacBook extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            displayingText: false
+            displayingMacBookText: false
         }
         this.toggleDisplayText = this.toggleDisplayText.bind(this)
     }
     toggleDisplayText() {
-        if (!this.state.displayingText) {
-            this.setState({ displayingText: true })
+        if (!this.state.displayingMacBookText) {
+            this.setState({ displayingMacBookText: true })
 
-        } else if (this.state.displayingText) {
-            this.setState({ displayingText: false })
+        } else {
+            this.setState({ displayingMacBookText: false })
         }
     }
     render() {
+        console.log('displaying MacBook text?: ', this.state.displayingMacBookText)
         return (
-            <VrButton onClick={() => this.toggleDisplayText()}>
-                {this.state.displayingText === true ? (
+            <View>
+            <VrButton onClick={this.toggleDisplayText}>
+                {this.state.displayingMacBookText === true ? (
                     <View>
                         <Text
                             style={{
+                                position: 'absolute',
                                 backgroundColor: '#777879',
                                 fontSize: 0.5,
                                 fontWeight: '400',
@@ -57,6 +60,7 @@ export default class MacBook extends Component {
                     />)
                 }
             </VrButton>
+            </View>
         )
     }
 }

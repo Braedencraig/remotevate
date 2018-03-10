@@ -11,30 +11,31 @@ export default class Clock extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            displayingText: false
+            displayingClockText: false
         }
         this.toggleDisplayText = this.toggleDisplayText.bind(this)
     }
 
     toggleDisplayText() {
-        if (!this.state.displayingText) {
-            this.setState({ displayingText: true })
+        if (!this.state.displayingClockText) {
+            this.setState({ displayingClockText: true })
 
-        } else if (this.state.displayingText) {
-            this.setState({ displayingText: false })
+        } else if (this.state.displayingClockText) {
+            this.setState({ displayingClockText: false })
         }
     }
 
     render() {
-        console.log('displaying text?: ', this.state.displayingText)
+        console.log('displaying Clock text?: ', this.state.displayingClockText)
         return (
             <View>
-                <VrButton onClick={() => this.toggleDisplayText()}>
-                    {this.state.displayingText === true ?
+                <VrButton onClick={this.toggleDisplayText}>
+                    {this.state.displayingClockText === true ?
                         (
                             <View>
                                 <Text
                                     style={{
+                                        position: 'absolute',
                                         backgroundColor: '#777879',
                                         fontSize: 0.7,
                                         fontWeight: '400',
@@ -45,7 +46,7 @@ export default class Clock extends Component {
                                         textAlignVertical: 'center',
                                         transform: [{ translate: [19, 13, 8] }, { rotateY: -90 }],
                                     }}>
-                                    Class begins at 10 a.m. sharp.
+                                    Class begins at 10 a.m. sharp, Monday to Friday.
                         </Text>
                             </View>
                         )
