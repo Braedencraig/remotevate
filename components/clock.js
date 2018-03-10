@@ -35,7 +35,7 @@ export default class Clock extends Component {
                             <View>
                                 <Text
                                     style={{
-                                        //position: 'absolute',
+                                        position: 'absolute',
                                         backgroundColor: '#777879',
                                         fontSize: 0.7,
                                         fontWeight: '400',
@@ -46,7 +46,7 @@ export default class Clock extends Component {
                                         textAlignVertical: 'center',
                                         transform: [{ translate: [19, 13, 8] }, { rotateY: -90 }],
                                     }}>
-                                    Class begins at 10 a.m. sharp.
+                                    Class begins at 10 a.m. sharp, Monday to Friday.
                         </Text>
                             </View>
                         )
