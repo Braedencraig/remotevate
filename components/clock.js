@@ -44,7 +44,7 @@ export default class Clock extends Component {
                                         paddingRight: 0.2,
                                         textAlign: 'center',
                                         textAlignVertical: 'center',
-                                        transform: [{ translate: [19, 11, 8] }, { rotateY: -90 }],
+                                        transform: [{ translate: [19, 10.5, 8] }, { rotateY: -90 }],
                                     }}>
                                     Class begins at 10 a.m. sharp, Monday to Friday.
                         </Text>
@@ -58,7 +58,7 @@ export default class Clock extends Component {
                                         width: 3,
                                         height: 3,
                                         layoutOrigin: [0.7, 0.7],
-                                        transform: [{ translate: [19, 11, 8] }, { rotateY: -90 }],
+                                        transform: [{ translate: [19, 10.5, 8] }, { rotateY: -90 }],
                                     }}
                                     />
                         )
