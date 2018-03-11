@@ -20,9 +20,9 @@ npm install
 npm run start
 ```
 ### Navigate to Your Browser
-`open localhost:8081/vr/`
+Go to [localhost:8081/vr/](localhost:8081/vr)
 
 ## Deployment
-[Deployed App](TK)
+[Deployed App](https://remotevate.herokuapp.com)
 ## Built With
 * [React VR](https://facebook.github.io/react-vr/)
