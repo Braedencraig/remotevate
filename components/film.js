@@ -26,7 +26,6 @@ class Film extends Component {
         }
     }
     render() {
-        console.log('video is playing?:', this.state.isPlaying)
         return (
             <View style={{ margin: 0.2, height: 2 }}>
                 <VrButton

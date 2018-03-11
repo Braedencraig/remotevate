@@ -26,7 +26,6 @@ export default class Water extends Component {
     }
 
     render() {
-        console.log('displaying Water text?: ', this.state.displayingWaterText)
         return (
             <View>
                 <VrButton onClick={this.toggleDisplayText}>

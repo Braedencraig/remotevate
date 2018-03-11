@@ -26,7 +26,6 @@ export default class Outside extends Component {
     }
 
     render() {
-        console.log('displaying Outside text?: ', this.state.displayingOutsideText)
         return (
             <View>
                 <VrButton onClick={this.toggleDisplayText}>

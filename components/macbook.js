@@ -26,7 +26,6 @@ export default class MacBook extends Component {
     }
 
     render() {
-        console.log('displaying MacBook text?: ', this.state.displayingMacBookText)
         return (
             <View>
                 <VrButton onClick={this.toggleDisplayText}>

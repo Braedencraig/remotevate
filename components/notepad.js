@@ -24,7 +24,6 @@ export default class Notepad extends Component {
     }
 
     render() {
-        console.log('displaying Notepad text?: ', this.state.displayingNotepadText)
         return (
             <View>
                 <VrButton onClick={this.toggleDisplayText}>

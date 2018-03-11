@@ -26,7 +26,6 @@ export default class Apple extends Component {
     }
 
     render() {
-        console.log('displaying Apple text?: ', this.state.displayingAppleText)
         return (
             <View>
                 <VrButton onClick={this.toggleDisplayText}>
